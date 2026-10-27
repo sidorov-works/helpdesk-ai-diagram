@@ -1,0 +1,790 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="LNcHDaL9OWel-JN1nK1g">
+    <mxGraphModel dx="1463" dy="1100" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" background="light-dark(#FFFFFF,#000000)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="txmYisg0f-mqa-eTLADv-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 2;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=default;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;Унифицированный асинхронный &lt;a href=&quot;https://github.com/sidorov-works/llm_client/blob/main/readme.md&quot;&gt;клиент&lt;/a&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; white-space: nowrap;&quot;&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;для работы с провайдерами LLM&lt;/span&gt;" vertex="1">
+          <mxGeometry height="179" width="322" x="1891" y="1923" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;dashed=1;dashPattern=1 2;fillColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/queue_client&quot;&gt;Клиент-интерфейс&lt;/a&gt;&amp;nbsp;для очередей" vertex="1">
+          <mxGeometry height="110" width="579" x="842" y="591" as="geometry" />
+        </mxCell>
+        <mxCell id="JZhIInoZeJvjr3lcKFBr-1" parent="1" style="swimlane;fillStyle=auto;swimlaneLine=0;rounded=1;strokeWidth=5;opacity=30;fixedHeader=1;dropTarget=1;expand=1;autosize=1;startSize=32;fillColor=none;labelBackgroundColor=none;swimlaneFillColor=default;strokeColor=light-dark(#000000,#FF99FF);align=center;spacingLeft=12;spacingTop=0;" value="Подсистема оперативного каталога" vertex="1">
+          <mxGeometry height="451" width="448" x="2396" y="719" as="geometry">
+            <mxRectangle height="130" width="311" x="2207" y="468" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-4" parent="JZhIInoZeJvjr3lcKFBr-1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillStyle=auto;labelBackgroundColor=none;dashed=1;dashPattern=1 2;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/catalog_service&quot;&gt;Высокоуровневый клиент&lt;/a&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; white-space: nowrap;&quot;&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;для работы с каталогом товаров&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; white-space: nowrap;&quot;&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;и поисковым сервисом&lt;/span&gt;" vertex="1">
+          <mxGeometry height="240" width="380" x="37" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-6" connectable="0" parent="JZhIInoZeJvjr3lcKFBr-1" style="group;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="132.38" width="166" x="65" y="251" as="geometry" />
+        </mxCell>
+        <mxCell id="JZhIInoZeJvjr3lcKFBr-5" parent="y5fbiPPX9gra191CkZ68-6" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis_catalog_client&quot;&gt;Низкоуровневый клиент&lt;/a&gt; оперативного каталога" vertex="1">
+          <mxGeometry height="132" width="166" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-1" parent="y5fbiPPX9gra191CkZ68-6" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/readme.md#docker-composeredis-catalogyml&quot;&gt;Оперативный каталог&lt;/a&gt;" vertex="1">
+          <mxGeometry height="111" width="61.75" x="50.629999999999995" y="27.379999999999995" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-7" edge="1" parent="JZhIInoZeJvjr3lcKFBr-1" source="y5fbiPPX9gra191CkZ68-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;" target="JZhIInoZeJvjr3lcKFBr-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-5" parent="JZhIInoZeJvjr3lcKFBr-1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/product_search_service&quot;&gt;Сервис поиска товаров&lt;/a&gt;" vertex="1">
+          <mxGeometry height="79" width="130" x="265" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-22" edge="1" parent="JZhIInoZeJvjr3lcKFBr-1" source="y5fbiPPX9gra191CkZ68-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-8" parent="JZhIInoZeJvjr3lcKFBr-1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/azerty_catalog_manager&quot;&gt;Менеджер каталога&lt;/a&gt; &lt;br&gt;Azerty" vertex="1">
+          <mxGeometry height="80" width="153" x="150" y="61" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-14" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="y5fbiPPX9gra191CkZ68-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-10" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="&lt;span style=&quot;color: rgb(26, 26, 26);&quot;&gt;.xlsx спецификации товаров&lt;/span&gt;" vertex="1">
+          <mxGeometry height="63" width="132" x="2876" y="789" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-15" parent="1" style="swimlane;rounded=1;fillStyle=auto;opacity=30;strokeWidth=5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=1;swimlaneLine=0;startSize=34;labelBackgroundColor=none;" value="ИИ подсистема" vertex="1">
+          <mxGeometry height="1332" width="679" x="1253" y="508" as="geometry">
+            <mxRectangle height="255" width="446" x="1445" y="537" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-19" parent="y5fbiPPX9gra191CkZ68-15" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontSize=13;labelBackgroundColor=none;" value="Репозиторий&amp;nbsp;&lt;a href=&quot;https://github.com/sidorov-works/ai_support&quot;&gt;ai_support&lt;/a&gt;" vertex="1">
+          <mxGeometry height="28" width="160" x="263" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-26" parent="y5fbiPPX9gra191CkZ68-15" style="swimlane;rounded=1;swimlaneLine=0;swimlaneFillColor=light-dark(#FFFFFF,#7EA6E0);fillColor=light-dark(#FFFFFF,#7EA6E0);strokeWidth=2;opacity=20;strokeColor=none;gradientColor=none;glass=0;shadow=0;" value="Пайплайн обработки тикета" vertex="1">
+          <mxGeometry height="1066" width="610" x="36" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-63" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=1;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);" target="y5fbiPPX9gra191CkZ68-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-64" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=7;strokeColor=light-dark(transparent,#9AC7BF);fontColor=light-dark(#000000,#D5E8D4);" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;NON_TOXIC&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5363" y="-1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-21" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_toxicity_filter_b/app/main.py&quot;&gt;Проверка на токсичность&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61.000000000000085" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-49" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="FfSmnB-jg7tu2Zo1I3Ux-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-68" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-84" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-68" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=6;labelBackgroundColor=none;strokeColor=light-dark(transparent,#9AC7BF);fontColor=light-dark(#000000,#D5E8D4);" value="WITH_CATEGORY" vertex="1">
+          <mxGeometry relative="1" x="-0.2365" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-24" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_classifier_b/app/main.py&quot;&gt;Классификация обращения&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-69" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-85" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-69" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=6;labelBackgroundColor=none;strokeColor=light-dark(transparent,#9AC7BF);fontColor=light-dark(#000000,#D5E8D4);" value="NEED_VERIFY_PRODUCT" vertex="1">
+          <mxGeometry relative="1" x="-0.3853" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-25" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_product_quick_checker/app/main.py&quot;&gt;Быстрая проверка товара&lt;/a&gt;&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="463" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-70" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-87" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-70" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="PRODUCT_VERIFIED" vertex="1">
+          <mxGeometry relative="1" x="-0.1674" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-26" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_product_verifier_b/app/main.py&quot;&gt;Нормализатор товара&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="531" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-71" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-88" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-71" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="WITH_MENTIONS" vertex="1">
+          <mxGeometry relative="1" x="-0.2114" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-28" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_mentioned_finder_b/app/main.py&quot;&gt;Поиск упоминаемых товаров&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-72" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-89" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-72" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="WITH_RAG" vertex="1">
+          <mxGeometry relative="1" x="-0.2114" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-42" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-29" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_rag_b/app/main.py&quot;&gt;RAG&lt;/a&gt;&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="666" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-73" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-90" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-73" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="READY_FOR_LLM" vertex="1">
+          <mxGeometry relative="1" x="-0.2415" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-30" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_prompt_maker/app/main.py&quot;&gt;Сборка контекста для промпта&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="734" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-50" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="FfSmnB-jg7tu2Zo1I3Ux-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-74" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-91" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="UNVALIDATED_ANSWERS" vertex="1">
+          <mxGeometry relative="1" x="-0.0788" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-31" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_llm/app/main.py&quot;&gt;Компиляция промпта и запрос LLM&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="61" y="801" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-62" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-64" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-62" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="FOR_ESCALATIONS" vertex="1">
+          <mxGeometry relative="1" x="-0.1693" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-63" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-65" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;" value="FOR_VALID_ANSWERS" vertex="1">
+          <mxGeometry relative="1" x="-0.0767" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-32" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_validator/app/main.py&quot;&gt;Валидация ответа LLM&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282.14635832338337" x="60.853641676616576" y="869" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-20" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="swimlane;swimlaneLine=0;rounded=1;strokeWidth=2;opacity=50;fillColor=none;fontStyle=0;fontColor=light-dark(#000000,#CCCCCC);" value="Обработка вложений" vertex="1">
+          <mxGeometry height="235" width="536" x="37" y="126" as="geometry">
+            <mxRectangle height="236" width="329" x="37" y="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-23" parent="FfSmnB-jg7tu2Zo1I3Ux-20" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_attachments_final_guard/app/main.py&quot;&gt;Контроль наличия необработанных вложений&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="282" x="24" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-65" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-20" source="y5fbiPPX9gra191CkZ68-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);" target="y5fbiPPX9gra191CkZ68-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-66" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=6;strokeColor=light-dark(transparent,#9AC7BF);fontColor=light-dark(#000000,#D5E8D4);" value="OCR_DONE" vertex="1">
+          <mxGeometry relative="1" x="-0.1683" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-22" parent="FfSmnB-jg7tu2Zo1I3Ux-20" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_image_attachment_handler/app/main.py&quot;&gt;Извлечение текста из изображений&lt;/a&gt;" vertex="1">
+          <mxGeometry height="41" width="281" x="24.57317916169177" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-30" parent="FfSmnB-jg7tu2Zo1I3Ux-20" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;strokeColor=light-dark(#000000,#B3B3B3);" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/image_classification_client.py&quot;&gt;Клиент&lt;/a&gt; для гибридной классификации изображений" vertex="1">
+          <mxGeometry height="41" width="160" x="349" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-31" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-20" source="y5fbiPPX9gra191CkZ68-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.206;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="GN7mpXHBc36UyjD1vLvu-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-19" parent="FfSmnB-jg7tu2Zo1I3Ux-20" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;strokeColor=light-dark(#000000,#B3B3B3);" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/ocr_client.py&quot;&gt;Клиент&lt;/a&gt; Vision-сервиса для OCR" vertex="1">
+          <mxGeometry height="40" width="162" x="349" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-21" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-20" source="y5fbiPPX9gra191CkZ68-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.998;exitY=0.805;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="FfSmnB-jg7tu2Zo1I3Ux-19" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="306" y="118" as="sourcePoint" />
+            <mxPoint x="1301" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-47" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;strokeColor=light-dark(#000000,#B3B3B3);" value="LLM- адаптер для &lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/34293b9a6b12261d14649c6a79a4c4e73fc1a9bb/shared/llm_adapters.py#L15&quot;&gt;классификации&lt;/a&gt; тикетов" vertex="1">
+          <mxGeometry height="40" width="160" x="388" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-48" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;strokeColor=light-dark(#000000,#B3B3B3);" value="LLM- адаптер для &lt;a href=&quot;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BlabelBackgroundColor%3Dnone%3BfontSize%3D11%3B%22%20value%3D%22LLM-%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B5%D1%80%20%D0%B4%D0%BB%D1%8F%20%26lt%3Ba%20href%3D%26quot%3Bhttps%3A%2F%2Fgithub.com%2Fsidorov-works%2Fai_support%2Fblob%2F34293b9a6b12261d14649c6a79a4c4e73fc1a9bb%2Fshared%2Fllm_adapters.py%23L15%26quot%3B%26gt%3B%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8%26lt%3B%2Fa%26gt%3B%20%D1%82%D0%B8%D0%BA%D0%B5%D1%82%D0%BE%D0%B2%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2241%22%20width%3D%22160%22%20x%3D%221813%22%20y%3D%221167%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&quot;&gt;генерации&amp;nbsp;ответов&lt;/a&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="391" y="801" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-67" edge="1" parent="FfSmnB-jg7tu2Zo1I3Ux-26" source="y5fbiPPX9gra191CkZ68-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#67AB9F);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-75" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-67" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=6;fontColor=light-dark(#000000,#D5E8D4);fontStyle=0;labelBackgroundColor=none;strokeColor=light-dark(transparent,#9AC7BF);" value="ALL_ATTACHMENTS_PROCESSED" vertex="1">
+          <mxGeometry relative="1" x="0.1877" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-60" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_answer_router/app/main.py&quot;&gt;Передача ответа&lt;/a&gt; в шлюз" vertex="1">
+          <mxGeometry height="40" width="140" x="203" y="989" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-61" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/w_escalation_router/app/main.py&quot;&gt;Передача эскалации&lt;/a&gt; в шлюз" vertex="1">
+          <mxGeometry height="40" width="143" x="60" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-37" parent="FfSmnB-jg7tu2Zo1I3Ux-26" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/rag_service.py&quot;&gt;RAG Service&lt;/a&gt;&lt;div&gt;RAG-поиск&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="93" x="389" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-33" connectable="0" parent="y5fbiPPX9gra191CkZ68-15" style="group" value="" vertex="1">
+          <mxGeometry height="121.88" width="171" x="287" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-30" parent="FfSmnB-jg7tu2Zo1I3Ux-33" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=11;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/meta_info_client.py&quot;&gt;Клиент-интерфейс&lt;/a&gt;&lt;br&gt;для работы с кэшем (Redis)" vertex="1">
+          <mxGeometry height="112" width="171.00000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-27" parent="FfSmnB-jg7tu2Zo1I3Ux-33" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;fontSize=11;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-ai.yml&quot;&gt;Кэш&lt;/a&gt; (метаданные)" vertex="1">
+          <mxGeometry height="98.38" width="55.08" x="58.74" y="21.68" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-95" edge="1" parent="y5fbiPPX9gra191CkZ68-15" source="FfSmnB-jg7tu2Zo1I3Ux-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="373" y="226.89999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-1" parent="y5fbiPPX9gra191CkZ68-15" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;strokeColor=light-dark(#000000,#67AB9F);strokeWidth=2;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-ai.yml&quot;&gt;Внутренние очереди&lt;/a&gt;" vertex="1">
+          <mxGeometry height="105.69" width="56.31" x="63.69" y="95.31" as="geometry" />
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-37" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=light-dark(#000000,#CC99FF);" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-83" connectable="0" parent="y5fbiPPX9gra191CkZ68-37" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=8;labelBackgroundColor=none;fontColor=light-dark(#000000,#CC99FF);" value="Поиск упоминаний товаров в тексте сообщения &lt;br&gt;и кэширование артикулов найденных товаров" vertex="1">
+          <mxGeometry relative="1" x="-0.7432" y="1" as="geometry">
+            <mxPoint x="-108" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y5fbiPPX9gra191CkZ68-38" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=light-dark(#000000,#CC99FF);" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-81" connectable="0" parent="y5fbiPPX9gra191CkZ68-38" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=8;labelBackgroundColor=none;fontColor=light-dark(#000000,#CC99FF);" value="Поиск наименования товара &lt;br&gt;при неполном соответствии" vertex="1">
+          <mxGeometry relative="1" x="-0.7042" y="1" as="geometry">
+            <mxPoint x="-116" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-26" edge="1" parent="1" source="GD0Yt_OWuvBHyDnpyFMI-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;" target="GD0Yt_OWuvBHyDnpyFMI-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-27" edge="1" parent="1" source="GD0Yt_OWuvBHyDnpyFMI-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;" target="GD0Yt_OWuvBHyDnpyFMI-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;dashed=1;dashPattern=1 2;" value="&lt;a href=&quot;https://github.com/sidorov-works/tei_utils/blob/main/readme.md#клиент-для-классификации-classifierclient&quot;&gt;ClassifierClient&lt;/a&gt;&lt;br&gt;Клиент с возможностью одновременного обращения к нескольким TEI-серверам" vertex="1">
+          <mxGeometry height="76" width="290" x="1650" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-10" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;" target="GD0Yt_OWuvBHyDnpyFMI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/main/clip_service/readme.md&quot;&gt;ClipService&lt;/a&gt;&amp;nbsp;для классификации изображения: &lt;br&gt;подходит ли для OCR" vertex="1">
+          <mxGeometry height="87" width="142" x="2073" y="582" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-23" parent="1" style="swimlane;rounded=1;fillStyle=auto;opacity=40;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=1;swimlaneLine=0;startSize=34;labelBackgroundColor=none;" value="Сервисы классификации" vertex="1">
+          <mxGeometry height="188" width="290" x="1651" y="115" as="geometry">
+            <mxRectangle height="117" width="290" x="1771" y="10" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-13" parent="GD0Yt_OWuvBHyDnpyFMI-23" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontSize=11;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Можно использовать как &lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/main/tei_service/readme.md&quot;&gt;&lt;br class=&quot;soft-break&quot;&gt;собственный TEI-like сервис&lt;/a&gt;&amp;nbsp;в режиме &lt;br&gt;классификатора, так и оригинальные серверы TEI&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="276" x="7" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-14" parent="GD0Yt_OWuvBHyDnpyFMI-23" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;labelBackgroundColor=none;fontSize=11;" value="Classifier #1&lt;div&gt;(например, &lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/deb5188003847966475b4162c090efec841ffcfd/tei_service/docker-compose.yml#L142&quot;&gt;pikabu&lt;/a&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="30" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="GD0Yt_OWuvBHyDnpyFMI-15" parent="GD0Yt_OWuvBHyDnpyFMI-23" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;labelBackgroundColor=none;fontSize=11;" value="Classifier #N" vertex="1">
+          <mxGeometry height="60" width="84" x="174" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-9" parent="1" style="swimlane;rounded=1;fillStyle=auto;opacity=40;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=1;swimlaneLine=0;startSize=34;labelBackgroundColor=none;" value="Vision сервисы" vertex="1">
+          <mxGeometry height="325" width="190" x="2082" y="727" as="geometry">
+            <mxRectangle height="117" width="152" x="2016" y="842" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-1" parent="GN7mpXHBc36UyjD1vLvu-9" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/deb5188003847966475b4162c090efec841ffcfd/vision_service/docker-compose.yml#L107&quot;&gt;Основной &lt;/a&gt;&lt;br&gt;OCR сервис" vertex="1">
+          <mxGeometry height="42" width="118" x="39" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-2" parent="GN7mpXHBc36UyjD1vLvu-9" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="OCR сервис&lt;br&gt;&lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/deb5188003847966475b4162c090efec841ffcfd/vision_service/docker-compose.yml#L150&quot;&gt;валидации&lt;/a&gt;" vertex="1">
+          <mxGeometry height="42" width="118" x="38" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-13" parent="GN7mpXHBc36UyjD1vLvu-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;labelBackgroundColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/main/vision_service/readme.md&quot;&gt;Vision Service&lt;/a&gt;" vertex="1">
+          <mxGeometry height="26" width="94" x="48" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-3" parent="GN7mpXHBc36UyjD1vLvu-9" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="Vision сервис для &lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/main/vision_service/docker-compose.yml#L22&quot;&gt;верификации &lt;/a&gt;результата CLIP &lt;br&gt;(при недостаточной уверенности)" vertex="1">
+          <mxGeometry height="91" width="117" x="40" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-35" edge="1" parent="1" source="FfSmnB-jg7tu2Zo1I3Ux-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.676;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;entryPerimeter=0;" target="GN7mpXHBc36UyjD1vLvu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GN7mpXHBc36UyjD1vLvu-36" edge="1" parent="1" source="FfSmnB-jg7tu2Zo1I3Ux-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=default;" target="GN7mpXHBc36UyjD1vLvu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-23" edge="1" parent="1" source="GN7mpXHBc36UyjD1vLvu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.005;exitY=0.107;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.552;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;exitPerimeter=0;" target="GD0Yt_OWuvBHyDnpyFMI-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-25" edge="1" parent="1" source="GN7mpXHBc36UyjD1vLvu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.007;exitY=0.371;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitPerimeter=0;" target="GN7mpXHBc36UyjD1vLvu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-51" edge="1" parent="1" source="txmYisg0f-mqa-eTLADv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;jumpSize=10;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#99CCFF);" target="FfSmnB-jg7tu2Zo1I3Ux-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;" value="DeepSeek" vertex="1">
+          <mxGeometry height="60" width="84" x="1912" y="2133" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;fontColor=light-dark(#000000,#999999);strokeColor=light-dark(#000000,#999999);" value="Olama" vertex="1">
+          <mxGeometry height="60" width="84" x="2013" y="2133" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;fontColor=light-dark(#000000,#999999);strokeColor=light-dark(#000000,#999999);" value="TGI" vertex="1">
+          <mxGeometry height="60" width="84" x="2111" y="2133" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-46" edge="1" parent="1" source="txmYisg0f-mqa-eTLADv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="FfSmnB-jg7tu2Zo1I3Ux-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1954" y="2074" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-53" edge="1" parent="1" source="FfSmnB-jg7tu2Zo1I3Ux-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#99CCFF);" target="txmYisg0f-mqa-eTLADv-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-78" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#CC99FF);" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-80" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-78" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=8;fontColor=light-dark(#000000,#CC99FF);" value="Проверка точного соответствия" vertex="1">
+          <mxGeometry relative="1" x="-0.7589" y="1" as="geometry">
+            <mxPoint x="-81" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-79" edge="1" parent="1" source="y5fbiPPX9gra191CkZ68-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#CC99FF);" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FfSmnB-jg7tu2Zo1I3Ux-82" connectable="0" parent="FfSmnB-jg7tu2Zo1I3Ux-79" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=8;labelBackgroundColor=none;fontColor=light-dark(#000000,#CC99FF);" value="Получение описания упомянутых товаров" vertex="1">
+          <mxGeometry relative="1" x="-0.7742" as="geometry">
+            <mxPoint x="-107" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-1" parent="1" style="swimlane;rounded=1;fillStyle=auto;opacity=40;strokeWidth=5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=1;swimlaneLine=0;startSize=34;labelBackgroundColor=none;strokeColor=light-dark(#000000,#E6E6E6);" value="Шлюз" vertex="1">
+          <mxGeometry height="824" width="674" x="330" y="505" as="geometry">
+            <mxRectangle height="117" width="290" x="1771" y="10" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-18" parent="ZyrPwLk0e6lqTQtchfoi-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;strokeColor=light-dark(#000000,#CDA2BE);strokeWidth=2;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-gate.yml&quot;&gt;Внутренние очереди&lt;/a&gt;" vertex="1">
+          <mxGeometry height="100.19" width="52.81" x="555.69" y="97.31" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-29" edge="1" parent="ZyrPwLk0e6lqTQtchfoi-1" source="ZyrPwLk0e6lqTQtchfoi-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#B5739D);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-30" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=7;fontColor=light-dark(#000000,#CDA2BE);" value="RAW_MESSAGES" vertex="1">
+          <mxGeometry relative="1" x="-0.0768" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-21" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=light-dark(#000000,#CCCCCC);align=left;spacingLeft=12;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/w_receiver/app/main.py&quot;&gt;Приемник&lt;/a&gt;&lt;br&gt;(HTTP - FastApi)" vertex="1">
+          <mxGeometry height="337" width="225" x="110" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-2" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="138" x="102" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-26" parent="9G9WvVQiY9Bj_G9QV1fS-2" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="16" width="16" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-1" parent="9G9WvVQiY9Bj_G9QV1fS-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;text-align: center; color: light-dark(rgb(0, 0, 0), rgb(204, 204, 204));&quot;&gt;/operator-replied&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="113" x="25" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-3" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group" value=" " vertex="1">
+          <mxGeometry height="30" width="138" x="102" y="653" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-4" parent="9G9WvVQiY9Bj_G9QV1fS-3" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;strokeColor=light-dark(#000000,#CDA2BE);" value="&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="16" width="16" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-5" parent="9G9WvVQiY9Bj_G9QV1fS-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;text-align: center; color: light-dark(rgb(0, 0, 0), rgb(205, 162, 190));&quot;&gt;/generate-answer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="113" x="25" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Система блокировок управляет жизненным циклом каждого тикета. Каждый тикет проходит через три основных состояния, контролируемых соответствующими блокировками: Wait Lock для аккумуляции сообщений, Process Lock на время обработки ИИ, и Escalation Lock после передачи оператору. Эта трехуровневая модель обеспечивает атомарность операций и предотвращает race conditions в распределенной системе.  Wait Lock устанавливается при получении сообщения клиента и действует в течение `WAIT_TIMEOUT` секунд. Это временное окно позволяет системе собрать &quot;догоночные&quot; сообщения — дополнительные уточнения, которые клиент может отправить сразу после основного вопроса. Специальный счетчик отслеживает количество продлений (до `WAIT_TTL_MAX_EXT` раз), предотвращая бесконечное ожидание. При истечении Wait Lock система извлекает сообщение из буфера и передает его ИИ-ассистенту, одновременно устанавливая Process Lock на `PROCESS_TIMEOUT` секунд — максимальное время, отведенное ИИ для генерации ответа.  Process Lock — механизм защиты от дублирования обработки. Он гарантирует, что только один экземпляр ИИ-ассистента работает с тикетом в данный момент. При успешном ответе ИИ система явно снимает Process Lock, предотвращая ложное срабатывание тайм-аута. Если же ответ не получен в течение `PROCESS_TIMEOUT`, система мониторинга обнаруживает истечение Process Lock и автоматически эскалирует тикет оператору, одновременно устанавливая Escalation Lock на `ESCALATION_TIMEOUT` секунд.  Escalation Lock маркирует тикеты, переданные операторам. При его установке атомарная операция удаляет все другие блокировки и буфер сообщений для этого тикета. Любые последующие сообщения клиента в эскалированном тикете игнорируются — система проверяет Escalation Lock до буферизации, предотвращая ненужную обработку.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ответ оператора полностью очищает состояние через атомарную операцию, которая удаляет все четыре ключа (wait, process, escalation, buffer), возвращая тикет в исходное состояние для возможного последующего взаимодействия.  Отдельно существует системная блокировка Cooldown — механизм самозащиты при перегрузке. Она активируется при частых тайм-аутах Process Lock или переполнении очередей, и экспоненциально увеличивает свой TTL при повторных срабатываниях (до `COOLDOWN_MAX_TTL`). В режиме Cooldown все новые тикеты немедленно эскалируются операторам, давая системе &quot;передышку&quot; для восстановления.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;При недоступности хранилища блокировок применяем graceful degradation: все операции немедленно завершаются эскалацией, обеспечивая хотя бы минимальный уровень сервиса при любых обстоятельствах.&lt;/div&gt;" id="9G9WvVQiY9Bj_G9QV1fS-23">
+          <mxCell connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group;fontSize=12;" vertex="1">
+            <mxGeometry height="138.16" width="161" x="145" y="494" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-20" parent="9G9WvVQiY9Bj_G9QV1fS-23" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=10;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/lock_service.py&quot;&gt;Управление&lt;/a&gt; блокировками&lt;br&gt;и буферизация сообщений" vertex="1">
+          <mxGeometry height="118" width="161" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-28" parent="9G9WvVQiY9Bj_G9QV1fS-23" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;strokeColor=light-dark(#000000,#CCCCCC);fontSize=11;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-gate.yml&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Блокировки,&lt;br&gt;буфер сообщений&lt;/font&gt;&lt;/a&gt;" vertex="1">
+          <mxGeometry height="111.19" width="50.5" x="57.34" y="20.97" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-26" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/helpdesk_client.py&quot;&gt;Helpdesk Client&lt;/a&gt;&amp;nbsp;&lt;br&gt;клиент-адаптер для конкретной helpdesk-системы.&amp;nbsp;&lt;br&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(204, 204, 204));&quot;&gt;При миграции на новую helpdesk-систему достаточно актуализоровать функции только в этом модуле&lt;/span&gt;" vertex="1">
+          <mxGeometry height="164" width="332" x="112" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-32" edge="1" parent="ZyrPwLk0e6lqTQtchfoi-1" source="9G9WvVQiY9Bj_G9QV1fS-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#B5739D);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-33" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=7;fontColor=light-dark(#000000,#CDA2BE);fontStyle=0;labelBackgroundColor=none;" value="READY_FOR_AI" vertex="1">
+          <mxGeometry relative="1" x="-0.0823" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-27" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/w_ticket_parser/app/main.py&quot;&gt;Парсинг&lt;/a&gt; данных от Helpdesk-системы" vertex="1">
+          <mxGeometry height="42" width="228" x="108" y="738" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-31" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/w_ai_dispatcher/app/main.py&quot;&gt;Отправка подготовленных тикетов&lt;/a&gt; в ИИ-подсистему" vertex="1">
+          <mxGeometry height="53" width="142" x="422" y="733" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-34" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;strokeColor=light-dark(#000000,#CCCCCC);" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/schemas/helpdesk_schemas.py&quot;&gt;Pydantic-модели&lt;/a&gt; helkpdesk-системы" vertex="1">
+          <mxGeometry height="49" width="120" x="288" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-35" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillStyle=solid;fillColor=light-dark(#FFFFFF,#7EA6E0);opacity=20;strokeColor=none;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/schemas/ai_support_schemas.py&quot;&gt;Схемы данных&lt;/a&gt;&lt;br&gt;ИИ-подсистемы" vertex="1">
+          <mxGeometry height="249" width="65" x="588" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-35" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group" value="" vertex="1">
+          <mxGeometry height="143" width="142" x="476" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-32" parent="ZyrPwLk0e6lqTQtchfoi-35" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/attachment_cache.py&quot;&gt;Клиент-интерфейс&lt;/a&gt;&amp;nbsp;&lt;br&gt;кэша вложений (Redis)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="109" width="142" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-29" parent="ZyrPwLk0e6lqTQtchfoi-35" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;strokeColor=light-dark(#000000,#E6E6E6);" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-gate.yml&quot;&gt;Кэш&amp;nbsp;&lt;br&gt;вложений&lt;/a&gt;" vertex="1">
+          <mxGeometry height="99.19" width="44" x="51.6" y="41.21" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-36" edge="1" parent="ZyrPwLk0e6lqTQtchfoi-1" source="ZyrPwLk0e6lqTQtchfoi-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="9G9WvVQiY9Bj_G9QV1fS-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-39" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="81" x="262" y="413" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-12" parent="9G9WvVQiY9Bj_G9QV1fS-39" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fontColor=light-dark(#000000,#B3B3B3);strokeColor=light-dark(#000000,#FF3333);" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="16" width="16" x="65" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-13" parent="9G9WvVQiY9Bj_G9QV1fS-39" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 51, 51));&quot;&gt;/escalation&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="55" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-40" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-1" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="90" x="253" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-7" parent="9G9WvVQiY9Bj_G9QV1fS-40" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fontColor=light-dark(#000000,#B3B3B3);strokeColor=light-dark(#000000,#97D077);" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="16" width="16" x="74" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-8" parent="9G9WvVQiY9Bj_G9QV1fS-40" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(151, 208, 119));&quot;&gt;/valid-answer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="64" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-72" edge="1" parent="ZyrPwLk0e6lqTQtchfoi-1" source="9G9WvVQiY9Bj_G9QV1fS-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#336600);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-58" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/w_answer_sender/app/main.py&quot;&gt;Получение ответов&lt;/a&gt; от ИИ-подсистемы" vertex="1">
+          <mxGeometry height="53" width="144" x="422" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-71" edge="1" parent="ZyrPwLk0e6lqTQtchfoi-1" source="9G9WvVQiY9Bj_G9QV1fS-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#990000);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-59" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/w_escalation_sender/app/main.py&quot;&gt;Получение эскалаций&lt;/a&gt; от ИИ-подсистемы" vertex="1">
+          <mxGeometry height="55" width="144" x="422" y="521" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-25" parent="ZyrPwLk0e6lqTQtchfoi-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Репозиторий&amp;nbsp; &lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/ReadMe.md&quot;&gt;HelpdeskGate&lt;/a&gt;" vertex="1">
+          <mxGeometry height="30" width="255" x="208" y="29" as="geometry" />
+        </mxCell>
+        <mxCell id="pNVpkqynzpfjLqnoVKF5-2" parent="ZyrPwLk0e6lqTQtchfoi-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;strokeColor=none;dashed=1;dashPattern=1 4;fillStyle=solid;fillColor=light-dark(#000000,#A680B8);opacity=20;" value="&lt;a href=&quot;https://github.com/sidorov-works/helpdesk_gate/blob/main/shared/schemas/helpdesk_schemas.py&quot;&gt;Схемы данных&lt;/a&gt;&lt;br&gt;Helpdesk системы" vertex="1">
+          <mxGeometry height="446" width="61" x="22" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-9" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#A9C4EB);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;exitX=1;exitY=0.5;exitDx=0;exitDy=0;jumpStyle=arc;jumpSize=8;" target="y5fbiPPX9gra191CkZ68-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1154.23" y="816.38" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-16" connectable="0" parent="ZyrPwLk0e6lqTQtchfoi-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=7;strokeColor=light-dark(transparent,#A9C4EB);fontColor=light-dark(#000000,#A9C4EB);" value="INCOMING_TICKETS" vertex="1">
+          <mxGeometry relative="1" x="0.5289" y="-1" as="geometry">
+            <mxPoint x="-6" y="109" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyrPwLk0e6lqTQtchfoi-7" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.79998779296875;rotation=90;horizontal=0;labelBackgroundColor=none;strokeColor=light-dark(#000000,#7EA6E0);strokeWidth=2;" value="&lt;a href=&quot;https://github.com/sidorov-works/redis-for-helpdesk/blob/main/docker-compose.redis-interface.yml&quot;&gt;Интерфейсные&lt;br&gt;очереди&lt;/a&gt;" vertex="1">
+          <mxGeometry height="109.19" width="55.56" x="1101.82" y="600.18" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-66" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#A9C4EB);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;jumpStyle=arc;jumpSize=12;" target="9G9WvVQiY9Bj_G9QV1fS-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1094.14" y="1694" />
+              <mxPoint x="1094.14" y="1054" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-69" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=7;fontColor=light-dark(#000000,#A9C4EB);fontStyle=0;labelBackgroundColor=none;" value="ESCALATIONS" vertex="1">
+          <mxGeometry relative="1" x="-0.009" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-67" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;opacity=50;strokeColor=light-dark(#000000,#A9C4EB);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;jumpStyle=arc;jumpSize=12;" target="9G9WvVQiY9Bj_G9QV1fS-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="1745" />
+              <mxPoint x="1045" y="1123" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-70" connectable="0" parent="9G9WvVQiY9Bj_G9QV1fS-67" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=7;fontColor=light-dark(#000000,#A9C4EB);fontStyle=0;labelBackgroundColor=none;" value="&amp;nbsp;VALID_ANSWERS" vertex="1">
+          <mxGeometry relative="1" x="-0.0019" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-80" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#336600);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530.05" y="965" />
+              <mxPoint x="530.05" y="788.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-81" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#990000);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-47">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="548.05" y="933" />
+              <mxPoint x="548.05" y="756.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-7" edge="1" parent="1" source="ZyrPwLk0e6lqTQtchfoi-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);dashed=1;dashPattern=1 2;" target="txmYisg0f-mqa-eTLADv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-9" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#CCCCCC);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="ZyrPwLk0e6lqTQtchfoi-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-12" connectable="0" parent="txmYisg0f-mqa-eTLADv-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(230, 230, 230));&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Информирование&lt;br&gt;об ответе оператора&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3094" as="geometry">
+            <mxPoint x="49" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-10" edge="1" parent="1" source="9G9WvVQiY9Bj_G9QV1fS-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#E6D0DE);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="9G9WvVQiY9Bj_G9QV1fS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-11" connectable="0" parent="txmYisg0f-mqa-eTLADv-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(205, 162, 190));&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Новое сообщение&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0502" y="1" as="geometry">
+            <mxPoint x="48" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-13" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="344" width="187" x="66" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-41" parent="txmYisg0f-mqa-eTLADv-13" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Helpdesk-система" vertex="1">
+          <mxGeometry height="344" width="180.13761467889907" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-46" connectable="0" parent="txmYisg0f-mqa-eTLADv-13" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="69.48165137614679" x="117.5183486238532" y="41" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-47" parent="9G9WvVQiY9Bj_G9QV1fS-46" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fontColor=light-dark(#000000,#B3B3B3);strokeColor=light-dark(#000000,#FF3333);" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="13.724770642201834" width="13.724770642201834" x="55.75688073394495" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-48" parent="9G9WvVQiY9Bj_G9QV1fS-46" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 51, 51));&quot;&gt;/escalation&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="47.178899082568805" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-49" connectable="0" parent="txmYisg0f-mqa-eTLADv-13" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="77.20183486238531" x="109.79816513761467" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-50" parent="9G9WvVQiY9Bj_G9QV1fS-49" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fontColor=light-dark(#000000,#B3B3B3);strokeColor=light-dark(#000000,#97D077);" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="13.724770642201833" width="13.724770642201833" x="63.47706422018348" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9G9WvVQiY9Bj_G9QV1fS-51" parent="9G9WvVQiY9Bj_G9QV1fS-49" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(151, 208, 119));&quot;&gt;/ai-reply&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="54.89908256880733" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-1" connectable="0" parent="txmYisg0f-mqa-eTLADv-13" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="77.20183486238531" x="109.79816513761467" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-6" connectable="0" parent="txmYisg0f-mqa-eTLADv-1" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="77.20183486238531" y="-6" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-2" parent="txmYisg0f-mqa-eTLADv-6" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fontColor=light-dark(#000000,#B3B3B3);strokeColor=light-dark(#000000,#E6E6E6);" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="13.724770642201833" width="13.724770642201833" x="63.47706422018348" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-3" parent="txmYisg0f-mqa-eTLADv-6" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(230, 230, 230));&quot;&gt;/health&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="54.89908256880733" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;" value="&lt;a href=&quot;https://github.com/sidorov-works/llm_client/blob/main/src/llm_client/deepseek_client.py&quot;&gt;DeepSeek &lt;br&gt;client&lt;/a&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="1912" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;fontColor=light-dark(#000000,#999999);strokeColor=light-dark(#000000,#999999);" value="Olama client" vertex="1">
+          <mxGeometry height="60" width="84" x="2013" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;labelBackgroundColor=none;fontSize=11;fontColor=light-dark(#000000,#999999);strokeColor=light-dark(#000000,#999999);" value="TGI client" vertex="1">
+          <mxGeometry height="60" width="84" x="2111" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-24" parent="1" style="swimlane;rounded=1;fillStyle=auto;opacity=20;strokeWidth=5;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=0;swimlaneLine=0;startSize=34;labelBackgroundColor=none;spacingLeft=36;spacingTop=10;strokeColor=light-dark(#000000,#7EA6E0);" value="RAG-подсистема" vertex="1">
+          <mxGeometry height="787" width="798" x="2307" y="1240" as="geometry">
+            <mxRectangle height="117" width="290" x="1771" y="10" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-35" connectable="0" parent="txmYisg0f-mqa-eTLADv-24" style="group" value="" vertex="1">
+          <mxGeometry height="245" width="212" x="39" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-33" parent="txmYisg0f-mqa-eTLADv-35" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 2;fillStyle=auto;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=default;spacingTop=8;" value="&lt;a href=&quot;https://github.com/sidorov-works/vector_db_utils&quot;&gt;Кастомный клиент&lt;/a&gt; векторной БД" vertex="1">
+          <mxGeometry height="245" width="212" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-29" parent="txmYisg0f-mqa-eTLADv-35" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8.076937161958995;verticalAlign=top;" value="Векторная БД" vertex="1">
+          <mxGeometry height="165.25943396226415" width="133.58904109589042" x="38.721461187214615" y="61.25" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-32" connectable="0" parent="txmYisg0f-mqa-eTLADv-35" style="group" value="" vertex="1">
+          <mxGeometry height="70.49528301886792" width="99.70776255707763" x="57.114155251141554" y="130.58962264150944" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-30" parent="txmYisg0f-mqa-eTLADv-32" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="" vertex="1">
+          <mxGeometry height="63.56132075471698" width="93.89954337899543" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-31" parent="txmYisg0f-mqa-eTLADv-32" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Коллекция документов тенанта с тегами&lt;/font&gt;" vertex="1">
+          <mxGeometry height="63.56132075471698" width="93.89954337899543" x="5.808219178082192" y="6.933962264150944" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-1" parent="txmYisg0f-mqa-eTLADv-24" style="swimlane;rounded=1;fillStyle=auto;opacity=40;strokeWidth=3;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=0;swimlaneLine=0;startSize=34;labelBackgroundColor=none;" value="Сервисы векторизации текста" vertex="1">
+          <mxGeometry height="185" width="298" x="35" y="66" as="geometry">
+            <mxRectangle height="117" width="290" x="1771" y="10" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-2" parent="o98nL9iyNaY2JYafbO3o-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontSize=11;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Можно использовать как &lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/main/tei_service/readme.md&quot;&gt;&lt;br class=&quot;soft-break&quot;&gt;собственный TEI-like сервис&lt;/a&gt;&amp;nbsp;в режиме энкодера, &lt;br class=&quot;soft-break&quot;&gt;так и оригинальные серверы TEI&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="268" x="16" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-3" parent="o98nL9iyNaY2JYafbO3o-1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;labelBackgroundColor=none;fontSize=10;" value="Encoder #1&lt;div&gt;(например, &lt;br&gt;&lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/deb5188003847966475b4162c090efec841ffcfd/tei_service/docker-compose.yml#L74&quot;&gt;ai-forever/FRIDA&lt;/a&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="96" x="37" y="107" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-4" parent="o98nL9iyNaY2JYafbO3o-1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;labelBackgroundColor=none;fontSize=10;" value="Encoder #2&lt;br&gt;(например, &lt;a href=&quot;https://github.com/sidorov-works/cuda-based-services/blob/deb5188003847966475b4162c090efec841ffcfd/tei_service/docker-compose.yml#L6&quot;&gt;deepvk/USER2-base&lt;/a&gt;)" vertex="1">
+          <mxGeometry height="60" width="96" x="169" y="107" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-9" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="txmYisg0f-mqa-eTLADv-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="o98nL9iyNaY2JYafbO3o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-44" parent="txmYisg0f-mqa-eTLADv-24" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 2;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=default;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/tei_utils/blob/main/readme.md#клиент-для-эмбеддингов-encoderclient&quot;&gt;EncoderClient&lt;/a&gt;&lt;br&gt;Клиент&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;для одновременных запросов &lt;br&gt;к нескольким TEI-серверам&lt;/span&gt;" vertex="1">
+          <mxGeometry height="64" width="297" x="37" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-10" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="o98nL9iyNaY2JYafbO3o-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-16" parent="txmYisg0f-mqa-eTLADv-24" style="swimlane;rounded=1;fillStyle=auto;opacity=30;strokeWidth=3;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontStyle=1;autosize=0;swimlaneLine=0;startSize=34;labelBackgroundColor=none;strokeColor=light-dark(#000000,#FF99CC);spacingRight=12;" value="CLI управления векторной БЗ" vertex="1">
+          <mxGeometry height="628" width="390" x="377" y="133" as="geometry">
+            <mxRectangle height="117" width="290" x="1771" y="10" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-17" parent="o98nL9iyNaY2JYafbO3o-16" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontSize=12;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Репозиторий &lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/readme.md&quot;&gt;kb-tool&lt;/a&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="26" width="129" x="129" y="23" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-38" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/shared/document_service.py&quot;&gt;Document Service&lt;/a&gt;&lt;div&gt;Управление документами&lt;/div&gt;" vertex="1">
+          <mxGeometry height="225" width="124" x="24" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-44" edge="1" parent="o98nL9iyNaY2JYafbO3o-16" source="o98nL9iyNaY2JYafbO3o-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=9;" target="txmYisg0f-mqa-eTLADv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-52" connectable="0" parent="o98nL9iyNaY2JYafbO3o-44" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=8;" value="Индексировать&lt;br&gt;документ с тегами" vertex="1">
+          <mxGeometry relative="1" x="-0.011" y="-1" as="geometry">
+            <mxPoint x="-22" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-45" edge="1" parent="o98nL9iyNaY2JYafbO3o-16" source="o98nL9iyNaY2JYafbO3o-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="txmYisg0f-mqa-eTLADv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-46" edge="1" parent="o98nL9iyNaY2JYafbO3o-16" source="o98nL9iyNaY2JYafbO3o-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="txmYisg0f-mqa-eTLADv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-20" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/convert.py&quot;&gt;convert&lt;/a&gt;" vertex="1">
+          <mxGeometry height="43" width="134.63" x="226.37" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-39" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/chunk.py&quot;&gt;chunk&lt;/a&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;Разделение документа на чанки&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="48" width="134.63" x="225.24" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-40" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/index.py&quot;&gt;index&lt;/a&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;Внесение чанков документа&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;в базу&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="134.63414634146343" x="225.2439024390244" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-41" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/list.py&quot;&gt;list&lt;/a&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;Вывести список документов&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;(по тегам)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="37" width="134.63414634146343" x="225.2439024390244" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-42" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/delete.py&quot;&gt;delete&lt;/a&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;Удаление документов&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;по названию / по тегам&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="41" width="134.63" x="224.12" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-58" edge="1" parent="o98nL9iyNaY2JYafbO3o-16" source="o98nL9iyNaY2JYafbO3o-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#999999);startArrow=classic;startFill=1;" target="o98nL9iyNaY2JYafbO3o-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-43" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#CCCCCC);strokeColor=light-dark(#000000,#999999);" value="&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/search.py&quot;&gt;search&lt;/a&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Для тестирования поиска&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="37" width="134.63414634146343" x="223" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-56" edge="1" parent="o98nL9iyNaY2JYafbO3o-16" source="o98nL9iyNaY2JYafbO3o-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="txmYisg0f-mqa-eTLADv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-54" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;a href=&quot;https://github.com/sidorov-works/kb_tool/blob/main/kb_tool/commands/vector.py&quot;&gt;vector&lt;/a&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px; line-height: 100%;&quot;&gt;Массовое добавление/удаление векторов&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="134.63" x="224.12" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-57" parent="o98nL9iyNaY2JYafbO3o-16" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#999999);" value="&lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/rag_service.py&quot;&gt;RAG Service&lt;/a&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px; color: light-dark(rgb(0, 0, 0), rgb(179, 179, 179));&quot;&gt;(копия &lt;a href=&quot;https://github.com/sidorov-works/ai_support/blob/main/shared/rag_service.py&quot;&gt;модуля&lt;/a&gt; из ai_support)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="59" width="93" x="24" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-49" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="txmYisg0f-mqa-eTLADv-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-50" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="txmYisg0f-mqa-eTLADv-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-59" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="o98nL9iyNaY2JYafbO3o-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#999999);" target="txmYisg0f-mqa-eTLADv-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-62" edge="1" parent="txmYisg0f-mqa-eTLADv-24" source="o98nL9iyNaY2JYafbO3o-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.842;entryY=0.995;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#999999);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startArrow=classic;startFill=1;endArrow=classic;jumpStyle=arc;jumpSize=12;entryPerimeter=0;" target="txmYisg0f-mqa-eTLADv-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txmYisg0f-mqa-eTLADv-43" edge="1" parent="1" source="txmYisg0f-mqa-eTLADv-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;jumpSize=12;strokeColor=light-dark(#000000,#FFE6CC);startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-14" connectable="0" parent="txmYisg0f-mqa-eTLADv-43" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=8;fontColor=light-dark(#000000,#FFE6CC);fontStyle=0;labelBackgroundColor=none;" value="&lt;font&gt;Поиск релевантного контекста&lt;br&gt;с фильтрацией по тегам&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.888" y="1" as="geometry">
+            <mxPoint x="-45" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-12" edge="1" parent="1" source="txmYisg0f-mqa-eTLADv-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;jumpSize=12;strokeColor=light-dark(#000000,#CCCCCC);startArrow=classic;startFill=1;" target="txmYisg0f-mqa-eTLADv-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2221.58" y="1407.52" />
+              <mxPoint x="2221.58" y="1556.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-13" connectable="0" parent="o98nL9iyNaY2JYafbO3o-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=8;" value="&lt;font&gt;Векторизация запроса&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.8398" as="geometry">
+            <mxPoint x="-11" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-65" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CC99FF);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startArrow=classic;startFill=1;endArrow=classic;" target="y5fbiPPX9gra191CkZ68-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-66" connectable="0" parent="o98nL9iyNaY2JYafbO3o-65" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;span style=&quot;color: rgb(204, 153, 255); font-size: 8px;&quot;&gt;Верифицировать/найти&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(204, 153, 255); font-size: 8px;&quot;&gt;артикулы&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(204, 153, 255); font-size: 8px;&quot;&gt;товара,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: rgb(204, 153, 255); font-size: 8px;&quot;&gt;указанного в имени файла.&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(204, 153, 255); font-size: 8px;&quot;&gt;Артикулы становятся тегами&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.445" y="2" as="geometry">
+            <mxPoint x="-1" y="-31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-67" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="62.5" width="105" x="3133" y="1392" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-68" parent="o98nL9iyNaY2JYafbO3o-67" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="" vertex="1">
+          <mxGeometry height="56.35245901639344" width="93.90165048543687" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-69" parent="o98nL9iyNaY2JYafbO3o-67" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Исходные документы html, word&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56.35" width="99.19" x="5.81" y="6.15" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-73" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="62.5" width="105" x="3134" y="1479" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-74" parent="o98nL9iyNaY2JYafbO3o-73" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="" vertex="1">
+          <mxGeometry height="56.35245901639344" width="93.90165048543687" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-75" parent="o98nL9iyNaY2JYafbO3o-73" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Текстовые документы &lt;b&gt;.md&lt;/b&gt;, .txt&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56.35" width="99.19" x="5.81" y="6.15" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-76" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="62.5" width="105" x="3136" y="1570" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-77" parent="o98nL9iyNaY2JYafbO3o-76" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="" vertex="1">
+          <mxGeometry height="56.35245901639344" width="93.90165048543687" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-78" parent="o98nL9iyNaY2JYafbO3o-76" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.17361136542426275;labelBackgroundColor=none;fontSize=11;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Чанки в формате .json&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56.35" width="99.19" x="5.81" y="6.15" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-80" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);" target="o98nL9iyNaY2JYafbO3o-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-81" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);" target="o98nL9iyNaY2JYafbO3o-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-82" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);" target="o98nL9iyNaY2JYafbO3o-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-83" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);" target="o98nL9iyNaY2JYafbO3o-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-84" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#CCCCCC);" target="o98nL9iyNaY2JYafbO3o-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-87" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.51;entryY=0.91;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=block;startFill=1;endArrow=none;endFill=0;opacity=40;" target="o98nL9iyNaY2JYafbO3o-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o98nL9iyNaY2JYafbO3o-88" edge="1" parent="1" source="o98nL9iyNaY2JYafbO3o-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.523;entryY=0.923;entryDx=0;entryDy=0;entryPerimeter=0;opacity=40;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startArrow=block;startFill=1;endArrow=none;endFill=0;" target="o98nL9iyNaY2JYafbO3o-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
